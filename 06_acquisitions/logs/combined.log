@@ -27,3 +27,11 @@
 {"level":"info","message":"User [object Object] created successfully","service":"acquisitions-api","timestamp":"2025-10-11T10:25:01.240Z"}
 {"level":"info","message":"User registered successfully: contact@email.com","service":"acquisitions-api","timestamp":"2025-10-11T10:25:01.244Z"}
 {"level":"info","message":"::1 - - [11/Oct/2025:10:25:01 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 201 103 \"-\" \"PostmanRuntime/7.48.0\"","service":"acquisitions-api","timestamp":"2025-10-11T10:25:01.247Z"}
+{"level":"info","message":"::1 - - [11/Oct/2025:12:42:41 +0000] \"POST /api/auth/sign-in HTTP/1.1\" 400 92 \"-\" \"PostmanRuntime/7.48.0\"","service":"acquisitions-api","timestamp":"2025-10-11T12:42:41.202Z"}
+{"level":"error","message":"Error authenticating user: Error: User not found","service":"acquisitions-api","timestamp":"2025-10-11T12:43:09.862Z"}
+{"level":"error","message":"Signin error User not found","service":"acquisitions-api","stack":"Error: User not found\n    at authenticateUser (file:///Users/macbookpro/Documents/workspace/devops/06_acquisitions/src/services/auth.service.js:34:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async signin (file:///Users/macbookpro/Documents/workspace/devops/06_acquisitions/src/controllers/auth.controller.js:65:18)","timestamp":"2025-10-11T12:43:09.863Z"}
+{"level":"info","message":"::1 - - [11/Oct/2025:12:43:09 +0000] \"POST /api/auth/sign-in HTTP/1.1\" 401 37 \"-\" \"PostmanRuntime/7.48.0\"","service":"acquisitions-api","timestamp":"2025-10-11T12:43:09.864Z"}
+{"level":"info","message":"User signed in successfully: contact@email.com","service":"acquisitions-api","timestamp":"2025-10-11T12:43:28.519Z"}
+{"level":"info","message":"::1 - - [11/Oct/2025:12:43:28 +0000] \"POST /api/auth/sign-in HTTP/1.1\" 200 115 \"-\" \"PostmanRuntime/7.48.0\"","service":"acquisitions-api","timestamp":"2025-10-11T12:43:28.520Z"}
+{"level":"info","message":"User signed out successfully","service":"acquisitions-api","timestamp":"2025-10-11T12:44:05.826Z"}
+{"level":"info","message":"::1 - - [11/Oct/2025:12:44:05 +0000] \"POST /api/auth/sign-out HTTP/1.1\" 200 42 \"-\" \"PostmanRuntime/7.48.0\"","service":"acquisitions-api","timestamp":"2025-10-11T12:44:05.828Z"}
