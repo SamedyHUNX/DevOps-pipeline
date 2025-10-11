@@ -1,27 +1,25 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: k8s-api
+  name: kubernetes-demo
   labels:
-    app: k8s-api
+    app: kubernetes-demo
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: k8s-api
+      app: kubernetes-demo
   template:
     spec:
-      imagePullSecrets:
-        - name: regcred
     metadata:
       labels:
-        app: k8s-api
+        app: kubernetes-demo
     spec:
       containers:
-        - name: k8s-api
-          image: samedyhunx/k8s_api:latest
+        - name: kubernetes-demo
+          image: samedyhunx/kubernetes-demo:latest
           ports:
-            - containerPort: 3000
+            - containerPort: 5000
           env:
             - name: NODE_ENV
               value: "production"
@@ -39,12 +37,12 @@ spec:
           readinessProbe:
             httpGet:
               path: /readyz
-              port: 3000
+              port: 5000
             initialDelaySeconds: 5
             periodSeconds: 10
           livenessProbe:
             httpGet:
               path: /healthz
-              port: 3000
+              port: 5000
             initialDelaySeconds: 10
             periodSeconds: 20
