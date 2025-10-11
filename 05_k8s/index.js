@@ -5,7 +5,7 @@ const PORT = process.env.PORT || 5000;
 
 app.get("/", (req, res) => {
   res.json({
-    message: "Hello world",
+    message: "Hello from a container",
     service: "hello-node",
     pod: process.env.POD_NAME || "unknown",
     time: new Date().toISOString(),
