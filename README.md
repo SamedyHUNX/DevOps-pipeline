@@ -275,23 +275,3 @@ devops/
 │   └── nginx.conf             # Reverse proxy config
 └── README.md                  # This file
 ```
-
-## 📞 Support & Questions
-
-If you have questions or need help:
-
-1. **Check the individual project README files** - Each project has detailed setup instructions
-2. **Review the code comments** - Inline documentation explains key concepts
-3. **Open an issue** - Use GitHub issues for bug reports or feature requests
-
-## 📄 License
-
-This project is licensed under the ISC License - see the individual `package.json` files for details.
-
----
-
-**Happy Learning! 🎓**
-
-This repository represents a journey through modern DevOps practices. Each project builds upon the previous one, creating a comprehensive learning experience from basic containerization to production-ready applications.
-
-Start with project 01 and work your way through, or dive into any project that matches your current skill level. The key is to understand not just *how* to implement these technologies, but *why* they're important in modern software development and deployment.
